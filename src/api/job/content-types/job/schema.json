@@ -4,7 +4,8 @@
   "info": {
     "singularName": "job",
     "pluralName": "jobs",
-    "displayName": "Job"
+    "displayName": "Job",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,34 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "HOD": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "deadline": {
+      "type": "date"
+    },
+    "MOA": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "apps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::app.app",
+      "mappedBy": "job"
     }
   }
 }
