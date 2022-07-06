@@ -26,14 +26,29 @@
         "audios"
       ]
     },
-    "Slug": {
-      "type": "uid"
-    },
     "job": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::job.job",
       "inversedBy": "apps"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "portfolio": {
+      "type": "string"
+    },
+    "info": {
+      "type": "string"
     }
   }
 }
